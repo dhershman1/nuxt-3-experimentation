@@ -1,6 +1,6 @@
 <script setup>
 const route = useRoute()
-const { data } = await useFetch(`http://www.omdbapi.com/?apikey=f1790ff4&i=${route.params.id}`, {
+const { data } = await useFetch(`https://www.omdbapi.com/?apikey=f1790ff4&i=${route.params.id}`, {
   pick: ['Title', 'Plot', 'Poster', 'Error']
 })
 
